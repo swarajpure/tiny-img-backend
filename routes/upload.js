@@ -1,9 +1,8 @@
 const express = require('express');
 
 const router = express.Router();
+const { uploadImg, resize } = require('../controllers/upload');
 
-router.get('/', (req, res) => {
-  res.json('working as expected!');
-});
+router.post('/', uploadImg, resize);
 
 module.exports = router;
