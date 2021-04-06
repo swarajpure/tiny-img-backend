@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const multer = require('multer');
 const sharp = require('sharp');
 
