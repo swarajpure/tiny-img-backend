@@ -4,6 +4,6 @@ const router = express.Router();
 const { uploadImg, resize } = require('../controllers/upload');
 const { uploadToImgur } = require('../utils/imgur');
 
-router.post('/', uploadImg, uploadToImgur, resize);
+router.post('/', uploadImg, resize, uploadToImgur);
 
 module.exports = router;
